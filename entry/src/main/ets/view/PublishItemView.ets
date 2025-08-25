@@ -20,7 +20,6 @@ export default struct PublishItemView {
   //   previewImage: $r('app.media.videoprivew1')
   // }; //发布项信息
 
-
   build() {
     Column({ space: 4 }) {
       Row() {
