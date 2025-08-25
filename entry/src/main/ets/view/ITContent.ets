@@ -72,7 +72,7 @@ export default struct HomeITContent {
         .width('90%')
 
         // 课程查询条件控制栏
-        CourseQueryCondition({ selectIndex: $condicationSelect, order_desc: $priceOrderDesc })
+        CourseQueryCondition({ selectIndex: $conditionSelect, order_desc: $priceOrderDesc })
         // 展示IT互联网课程二级分类
         List() {
           ForEach(MainViewModel.getCourseType4ITContent(), (item: CourseTypeBean) => {

@@ -79,7 +79,6 @@ export default struct Home {
         .backgroundColor(Color.White)
         .borderRadius(12)
         .width('90%')
-        .height(300)
 
         //热门课程
         Row() {
@@ -106,7 +105,6 @@ export default struct Home {
         .borderRadius(12)
         .divider({ strokeWidth: 1 })
         .width('90%')
-        .height(200)
       }
     }
     .width(Const.FULL_WIDTH)
