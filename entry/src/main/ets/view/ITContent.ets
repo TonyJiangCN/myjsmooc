@@ -7,9 +7,6 @@ import TrainCampCell from '../common/components/TrainCampCell'
 import Const from '../common/constants/CommonConstants'
 import MainViewModel from '../viewmodel/MainViewModel'
 
-import router from '@ohos.router'
-
-
 @Component
 export default struct HomeITContent {
   // 默认综合查询
@@ -60,9 +57,11 @@ export default struct HomeITContent {
             Text('查看更多')
               .fontSize(14)
               .onClick(() => {
-                router.pushUrl({
-                  url: 'pages/MoreITCoursePage'
-                })
+                this.getUIContext()
+                  .getRouter()
+                  .pushUrl({
+                    url: 'pages/MoreITCoursePage'
+                  })
               })
             Image($r('app.media.right'))
               .height(16)
@@ -100,10 +99,13 @@ export default struct HomeITContent {
             ListItem() {
               CourseCell({ course: item })
             }
-            .onClick(() => { //跳转到课程详情页面
-              router.pushUrl({
-                url: 'pages/CourseDetailPage'
-              })
+            .onClick(() => {
+              // 跳转到课程详情页面
+              this.getUIContext()
+                .getRouter()
+                .pushUrl({
+                  url: 'pages/CourseDetailPage'
+                })
             })
           }, (item: CourseBean) => JSON.stringify(item))
         }
