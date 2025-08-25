@@ -11,7 +11,6 @@ struct MainPage {
   private tabsController: TabsController = new TabsController();
 
   build() {
-
     Tabs({ barPosition: BarPosition.End, controller: this.tabsController }) {
       // 首页页面
       TabContent() {
@@ -52,7 +51,6 @@ struct MainPage {
     .onChange((index: number) => {
       this.index = index
     })
-
   }
 
   @Builder
