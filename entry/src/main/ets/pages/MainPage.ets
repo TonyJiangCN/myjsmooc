@@ -14,8 +14,6 @@ struct MainPage {
     Tabs({ barPosition: BarPosition.End, controller: this.tabsController }) {
       // 首页页面
       TabContent() {
-        //Text('首页').fontSize(30)
-        //Home()//主页功能
         HomeView()
       } //.tabBar('首页')
       .backgroundColor($r('sys.color.comp_background_focus'))
@@ -31,7 +29,6 @@ struct MainPage {
 
       // 社区页面
       TabContent() {
-        //Text('社区').fontSize(30)
         CommunityView()
       } //.tabBar('社区')
       .backgroundColor($r('sys.color.comp_background_focus'))
@@ -39,7 +36,6 @@ struct MainPage {
 
       // 个人中心页面
       TabContent() {
-        //Text('我的').fontSize(30)
         MineView()
       } //.tabBar('我的')
       .backgroundColor($r('sys.color.comp_background_focus'))

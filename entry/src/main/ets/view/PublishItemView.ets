@@ -4,22 +4,6 @@ import PublishItem from '../common/bean/PublishItemBean'
 export default struct PublishItemView {
   @Prop publishItem: PublishItem;
 
-  // private publishItem: PublishItem = {
-  //   itemId: 1,
-  //   userId: '1',
-  //   nickName: 'Tony老师',
-  //   userImage: $r('app.media.avatar1'),
-  //   roleName: '讲师',
-  //   publishContent: '白日依山尽，黄河入海流！',
-  //   videoResource: $rawfile('video1.mp4'),
-  //   publishDate: '2023-3-3',
-  //   tags: '#打卡#心得',
-  //   favoriteCount: 22,
-  //   commentCount: 11,
-  //   loveCount: 33,
-  //   previewImage: $r('app.media.videoprivew1')
-  // }; //发布项信息
-
   build() {
     Column({ space: 4 }) {
       Row() {

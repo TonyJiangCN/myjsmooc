@@ -3,7 +3,7 @@ import CommunityTypeBean from '../common/bean/CommunityTypeBean';
 import CourseBean from '../common/bean/CourseBean';
 import CourseTypeBean from '../common/bean/CourseTypeBean';
 import HomeItemBean from '../common/bean/HomeItemBean';
-import PublishItem from '../common/bean/PublishItemBean';
+import PublishItemBean from '../common/bean/PublishItemBean';
 
 export class MainViewModel {
   getHomeSwiperImage(): Array<Resource> {
@@ -207,8 +207,8 @@ export class MainViewModel {
     return communityTypeList;
   }
 
-  getPublishList(): Array<PublishItem> {
-    let publishItemList: PublishItem[] = [
+  getPublishList(): Array<PublishItemBean> {
+    let publishItemList: PublishItemBean[] = [
       {
         itemId: 1,
         userId: '1',

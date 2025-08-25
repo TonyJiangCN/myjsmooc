@@ -11,14 +11,7 @@ export default struct Home {
   build() {
     Scroll() {
       Column({ space: 10 }) {
-        //Text('首页').fontSize(20).fontWeight(FontWeight.Bold)
         Swiper(this.swiperController) {
-          // Image($r('app.media.swiper1')).width('90%').height('150').borderRadius(10)
-          // Image($r('app.media.swiper2')).width('90%').height('150').borderRadius(10)
-          // Image($r('app.media.swiper3')).width('90%').height('150').borderRadius(10)
-          // Image($r('app.media.swiper4')).width('90%').height('150').borderRadius(10)
-          // Image($r('app.media.swiper5')).width('90%').height('150').borderRadius(10)
-          // Image($r('app.media.swiper6')).width('90%').height('150').borderRadius(10)
           ForEach(MainViewModel.getHomeSwiperImage(), (img: Resource) => {
             Image(img)
               .width('90%')
@@ -28,7 +21,7 @@ export default struct Home {
         }
         .autoPlay(true)
 
-        //常用功能列表布局
+        // 常用功能列表布局
         Grid() {
           ForEach(MainViewModel.getHomeItemBeanList(), (item: HomeItemBean) => {
             GridItem() {
