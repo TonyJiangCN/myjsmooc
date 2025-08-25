@@ -2,6 +2,10 @@
   "src": [
     "pages/Index",
     "pages/Loading",
-    "pages/MainPage"
+    "pages/MainPage",
+    "pages/MoreITCoursePage",
+    "pages/SearchCoursePage",
+    "pages/CourseDetailPage",
+    "pages/SettingsPage"
   ]
 }
