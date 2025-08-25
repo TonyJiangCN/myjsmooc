@@ -28,4 +28,5 @@ class Logger {
   }
 }
 
-export default new Logger('[Myjsmook_App]') //此处填应用名即可
+// 此处填应用名即可
+export default new Logger('[Myjsmook_App]')
