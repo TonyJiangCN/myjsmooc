@@ -93,7 +93,6 @@ export default struct HomeITContent {
         }
         .listDirection(Axis.Horizontal)
         .width('90%')
-        .height(200)
 
         // 使用List循环展示IT分类下的课程数据，此处未实现根据条件查找功能，仅做数据模拟展示
         List() {
@@ -112,7 +111,6 @@ export default struct HomeITContent {
         .borderRadius(12)
         .divider({ strokeWidth: 1 })
         .width('90%')
-        .height(200)
       }
     }
     .width(Const.FULL_WIDTH)

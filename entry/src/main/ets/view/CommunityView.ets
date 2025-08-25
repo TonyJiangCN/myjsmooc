@@ -38,7 +38,6 @@ export default struct CommunityView {
                 }, (tag: string) => tag)
               }
               .width('100%')
-              .height(50)
               .listDirection(Axis.Horizontal)
 
               //发布项目列表展示
@@ -50,7 +49,6 @@ export default struct CommunityView {
                 }, (pubItem: PublishItemBean) => JSON.stringify(pubItem))
               }
               .width('100%')
-              .height(300)
               .listDirection(Axis.Vertical)
             }
             .height('100%')
