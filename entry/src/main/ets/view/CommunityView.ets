@@ -19,7 +19,6 @@ export default struct CommunityView {
       Tabs() {
         ForEach(MainViewModel.getCommunityTypeList(), (typeItem: CommunityTypeBean) => {
           TabContent() {
-            //Text(typeItem.type)
             Column() {
               //展示二级标签
               List() {
@@ -42,11 +41,11 @@ export default struct CommunityView {
 
               //发布项目列表展示
               List() {
-                ForEach(MainViewModel.getPublishList(), (pubItem: PublishItemBean) => {
+                ForEach(MainViewModel.getPublishList(), (item: PublishItemBean) => {
                   ListItem() {
-                    PublishItemView({ publishItem: pubItem })
+                    PublishItemView({ publishItem: item })
                   }
-                }, (pubItem: PublishItemBean) => JSON.stringify(pubItem))
+                }, (item: PublishItemBean) => JSON.stringify(item))
               }
               .width('100%')
               .listDirection(Axis.Vertical)

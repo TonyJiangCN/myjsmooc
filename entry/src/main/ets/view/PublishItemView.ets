@@ -1,8 +1,8 @@
-import PublishItem from '../common/bean/PublishItemBean'
+import PublishItemBean from '../common/bean/PublishItemBean'
 
 @Component
 export default struct PublishItemView {
-  @Prop publishItem: PublishItem;
+  @Prop publishItem: PublishItemBean;
 
   build() {
     Column({ space: 4 }) {

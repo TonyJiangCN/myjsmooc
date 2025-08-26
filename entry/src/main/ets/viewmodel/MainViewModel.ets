@@ -116,8 +116,6 @@ export class MainViewModel {
       new CourseBean('软考入门', $r('app.media.course07'), 'hot course! good good!', 288.00, 5666),
       new CourseBean('鸿蒙北向应用开发指南', $r('app.media.course09'), 'hot course! good good!', 888.00, 7775),
       new CourseBean('鸿蒙设备开发', $r('app.media.course02'), 'hot course! good good!', 88.00, 9005)
-
-
     ]
     return hotCourseList;
   }
